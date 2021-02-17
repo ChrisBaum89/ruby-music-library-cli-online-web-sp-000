@@ -57,6 +57,7 @@ class MusicLibraryController
       sortedlist.each do |song|
         puts "#{count}. #{song.name}"
         count += 1
+      end
     end
 
 
