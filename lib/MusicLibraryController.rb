@@ -55,7 +55,7 @@ class MusicLibraryController
     if artist = Artist.find_by_name(input)
       sortedlist = artist.songs.sort{|a, b| a.name <=> b.name}
       sortedlist.each do |song|
-        puts "#{count}. #{song.name}"
+        puts "#{count}. #{song.name} - #{song.genre}"
         count += 1
       end
     end
