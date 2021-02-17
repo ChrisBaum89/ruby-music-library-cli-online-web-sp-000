@@ -79,7 +79,7 @@ class MusicLibraryController
     input = gets.strip.to_i
     sortedlist = Song.all.sort{|a, b| a.name <=> b.name}
     targetsong = sortedlist[input - 1]
-    if input > 0 && input < sortedlist.count
+    if input > 0
       puts "Playing #{targetsong.name} by #{targetsong.artist.name}" unless not targetsong
     else
       play_song
