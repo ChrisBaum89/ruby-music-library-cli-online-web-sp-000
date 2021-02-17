@@ -82,7 +82,6 @@ class MusicLibraryController
     if input > 0
       puts "Playing #{targetsong.name} by #{targetsong.artist.name}" unless not targetsong
     else
-      play_song
     end
 
   end
