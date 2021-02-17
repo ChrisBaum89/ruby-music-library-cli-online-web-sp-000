@@ -23,9 +23,9 @@ class MusicLibraryController
 
   def list_songs
     count = 1
+    binding.pry
     Song.all.each do |song|
       puts "#{count}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-      binding.pry
     end
     count += 1
   end
