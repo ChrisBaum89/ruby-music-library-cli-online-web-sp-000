@@ -39,7 +39,7 @@ class MusicLibraryController
     end
   end
 
-  def list_generes
+  def list_genres
     count = 1
     sortedlist = Genre.all.sort{|a, b| a.name <=> b.name}
     sortedlist.each do |genre|
