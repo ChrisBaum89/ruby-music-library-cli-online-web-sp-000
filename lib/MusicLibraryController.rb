@@ -24,7 +24,6 @@ class MusicLibraryController
   def list_songs
     count = 1
     sortedlist = Song.all.sort{|a, b| a.name <=> b.name}
-    binding.pry
     Song.all.sorteach do |song|
       puts "#{count}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
