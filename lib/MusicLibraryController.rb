@@ -23,7 +23,7 @@ class MusicLibraryController
 
   def list_songs
     count = 1
-    Songs.all.each do |song|
+    Song.all.each do |song|
       puts "#{count}. song"
     end
     count += 1
