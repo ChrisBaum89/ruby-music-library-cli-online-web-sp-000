@@ -20,4 +20,13 @@ class MusicLibraryController
       input = gets.strip
     end
   end
+
+  def list_songs
+    count = 1
+    Songs.all.each do |song|
+      puts "#{count}. song"
+    end
+    count += 1
+      
+  end
 end
