@@ -47,4 +47,9 @@ class MusicLibraryController
       count += 1
     end
   end
+
+  def list_songs_by_artist
+    input = gets.strip
+    
+  end
 end
