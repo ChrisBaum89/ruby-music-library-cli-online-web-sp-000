@@ -78,6 +78,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     @songssortedlist
+    binding.pry
     #puts "Playing #{song.name} by #{song.artist.name}"
   end
 end
