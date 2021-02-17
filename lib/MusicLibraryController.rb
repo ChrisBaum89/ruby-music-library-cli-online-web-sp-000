@@ -79,6 +79,6 @@ class MusicLibraryController
     input = gets.strip.to_i
     sortedlist = Song.all.sort{|a, b| a.name <=> b.name}
     targetsong = sortedlist[input - 1]
-    #puts "Playing #{song.name} by #{song.artist.name}"
+    puts "Playing #{targetsong.name} by #{targetsong.artist.name}"
   end
 end
