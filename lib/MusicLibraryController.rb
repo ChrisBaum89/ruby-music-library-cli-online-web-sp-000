@@ -31,6 +31,11 @@ class MusicLibraryController
   end
 
   def list_artists
-
+    count = 1
+    sortedlist = Artist.all.sort{|a, b| a.name <=> b.name}
+    sortedlist.each do |artist|
+      puts "#{count}. #{artist.name}"
+      count += 1
+    end
   end
 end
