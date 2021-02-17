@@ -26,7 +26,7 @@ class MusicLibraryController
     sortedlist = Song.all.sort{|a, b| a.name <=> b.name}
     sortedlist.each do |song|
       puts "#{count}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      count += 1
     end
-    count += 1
   end
 end
